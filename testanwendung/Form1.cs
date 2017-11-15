@@ -43,7 +43,7 @@ namespace testanwendung
 
         private void btn_test2_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("Hallo Raphael");
         }
         public void DrawRectangleRectangle(List<LED_P> led_list)
         {
