@@ -61,12 +61,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anwendungen\Simulation\Simulations_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anwendungen\Simulation\Simulations_Form.Designer.cs">
+      <DependentUpon>Simulations_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Main.Designer.cs">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kern\Klassen\Kommunikations_Klassen.cs" />
+    <Compile Include="Kern\Klassen\Physische_Klassen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests_Paul\Class1.cs" />
@@ -76,7 +84,16 @@
     <Compile Include="Tests_Paul\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tests_Paul\Formtest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests_Paul\Formtest.Designer.cs">
+      <DependentUpon>Formtest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests_Paul\functions.cs" />
+    <EmbeddedResource Include="Anwendungen\Simulation\Simulations_Form.resx">
+      <DependentUpon>Simulations_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +109,9 @@
     <EmbeddedResource Include="Tests_Paul\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tests_Paul\Formtest.resx">
+      <DependentUpon>Formtest.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,9 +126,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Anwendungen\" />
     <Folder Include="Kern\Funktionen\" />
-    <Folder Include="Kern\Klassen\" />
     <Folder Include="Kern\Kommunikation\" />
     <Folder Include="Tests_Klaus\" />
     <Folder Include="Tests_Raphael\" />

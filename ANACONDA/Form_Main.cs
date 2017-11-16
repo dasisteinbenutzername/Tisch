@@ -18,5 +18,19 @@ namespace ANACONDA
         }
 
 
+
+        #region "Pauls Tests"
+
+        private void btn_test_paul_Click(object sender, EventArgs e)
+        {
+            //Application.Run(new Tests_Paul.Form1());
+            Anwendungen.Simulation.Simulations_Form simulations_Form = new Anwendungen.Simulation.Simulations_Form();
+            
+            simulations_Form.Show();
+        }
+        #endregion
+
+
+
     }
 }

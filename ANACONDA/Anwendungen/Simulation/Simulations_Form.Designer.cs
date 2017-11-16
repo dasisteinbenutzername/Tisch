@@ -1,12 +1,11 @@
-﻿namespace ANACONDA.Tests_Paul
+﻿namespace ANACONDA.Anwendungen.Simulation
 {
-    partial class Form1
+    partial class Simulations_Form
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
 
         /// <summary>
         /// Clean up any resources being used.
@@ -30,39 +29,37 @@
         private void InitializeComponent()
         {
             this.panel_test = new System.Windows.Forms.Panel();
-            this.btn_test = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel_test
             // 
-            this.panel_test.Location = new System.Drawing.Point(13, 18);
+            this.panel_test.Location = new System.Drawing.Point(13, 14);
             this.panel_test.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel_test.Name = "panel_test";
             this.panel_test.Size = new System.Drawing.Size(900, 923);
-            this.panel_test.TabIndex = 6;
+            this.panel_test.TabIndex = 7;
             // 
-            // btn_test
+            // button1
             // 
-            this.btn_test.Location = new System.Drawing.Point(1162, 18);
-            this.btn_test.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_test.Name = "btn_test";
-            this.btn_test.Size = new System.Drawing.Size(112, 35);
-            this.btn_test.TabIndex = 7;
-            this.btn_test.Text = "test";
-            this.btn_test.UseVisualStyleBackColor = true;
-            this.btn_test.Click += new System.EventHandler(this.btn_test_Click);
+            this.button1.Location = new System.Drawing.Point(1220, 104);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(290, 207);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Simulations_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1293, 852);
-            this.Controls.Add(this.btn_test);
+            this.ClientSize = new System.Drawing.Size(1715, 1047);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel_test);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "Simulations_Form";
+            this.Text = "Simulations_Form";
+            this.Load += new System.EventHandler(this.Simulations_Form_Load);
             this.ResumeLayout(false);
 
         }
@@ -70,6 +67,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_test;
-        private System.Windows.Forms.Button btn_test;
+        private System.Windows.Forms.Button button1;
     }
 }

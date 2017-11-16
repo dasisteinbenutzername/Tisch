@@ -16,8 +16,9 @@ namespace ANACONDA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form_MAIN());
-            Application.Run(new Tests_Paul.Form1());
+            Application.Run(new Form_MAIN());
+            //Application.Run(new Tests_Paul.Form1());
+            //Application.Run(new Anwendungen.Simulations_Form());
         }
     }
 }
