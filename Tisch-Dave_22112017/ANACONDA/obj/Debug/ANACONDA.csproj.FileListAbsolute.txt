@@ -27,3 +27,4 @@ F:\Tisch-Dave_22112017\ANACONDA\obj\Debug\ANACONDA.Properties.Resources.resource
 F:\Tisch-Dave_22112017\ANACONDA\obj\Debug\ANACONDA.Tests_Paul.Form1.resources
 F:\Tisch-Dave_22112017\ANACONDA\obj\Debug\ANACONDA.Tests_Paul.Formtest.resources
 F:\Tisch-Dave_22112017\ANACONDA\obj\Debug\ANACONDA.csproj.GenerateResource.Cache
+F:\Tisch-Dave_22112017\ANACONDA\obj\Debug\ANACONDA.csproj.CoreCompileInputs.cache

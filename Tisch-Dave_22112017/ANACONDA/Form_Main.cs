@@ -36,18 +36,22 @@ namespace ANACONDA
 
         private void btn_klaus_test_Click(object sender, EventArgs e)
         {
-            Anwendungen.FangDenAnderen.FangDenAnderen fangen = new Anwendungen.FangDenAnderen.FangDenAnderen();
-            fangen.Show();
+            //Anwendungen.FangDenAnderen.FangDenAnderen fangen = new Anwendungen.FangDenAnderen.FangDenAnderen();
+            //fangen.Show();
+            var bla = new Kern.Klassen.analysis();
+            bla.KommunikationInAuftragGeben();
+            
         }
 
         private void Form_MAIN_Load(object sender, EventArgs e)
         {
             var kommunikation1 = new Kern.Klassen.communication();
             var analyse = new Kern.Klassen.analysis();
-            var tcpclient1 = new Kern.Klassen.tcpclient();
-            //tcpclient1.port = 13000;
+            var tcpclient1 = new Kern.Klassen.tcpclient();           
             tcpclient1.message = "TEST";
             kommunikation1.CommunicationReceived += analyse.OnCommunicationReceived;
+            analyse.SendCommunication += tcpclient1.OnSendCommunication;
+            
 
             //Port übergebbar Machen
             ThreadStart del = new ThreadStart(kommunikation1.start_tcp_listener);
@@ -55,7 +59,8 @@ namespace ANACONDA
             ThreadStart del2 = new ThreadStart(tcpclient1.sendCommunication);
             Thread th2 = new Thread(del2);
             thread.Start();
-            th2.Start();
+            analyse.KommunikationInAuftragGeben();
+            //th2.Start();
         }
     }
 }

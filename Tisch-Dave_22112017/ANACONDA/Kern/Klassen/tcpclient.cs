@@ -11,7 +11,7 @@ namespace ANACONDA.Kern.Klassen
     class tcpclient
     {
         //public Int32 port = 13001;
-        public string destinationip = "192.168.2.116";
+        public string destinationip = "127.0.0.1";
         public string message = "Das ist ein Test, ob auch alles funktioniert";
         public Int32 port = 15000;
 
@@ -43,6 +43,16 @@ namespace ANACONDA.Kern.Klassen
                 MessageBox.Show("Fahler" + e);
             }
             
+        }
+
+
+        public void OnSendCommunication(object obj, EventArgs e)
+        {
+            MessageBox.Show("Das Ereignis wurde korrekt ausgelöst");
+            message = "Ein Test";
+            destinationip = "127.0.0.1";
+            port = 15000;
+            sendCommunication();
         }
     }
 

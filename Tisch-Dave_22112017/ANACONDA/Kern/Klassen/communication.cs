@@ -23,7 +23,7 @@ namespace ANACONDA.Kern.Klassen
         
         
         //Verbindungsinfos 
-        IPAddress localaddr = IPAddress.Parse("192.168.2.116");
+        IPAddress localaddr = IPAddress.Parse("127.0.0.1");
         public Int32 port = 13000;
 
 
