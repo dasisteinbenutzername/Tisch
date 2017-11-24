@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ANACONDA.Kern.Klassen
 {
@@ -51,10 +52,10 @@ namespace ANACONDA.Kern.Klassen
                 // Loop to receive all the data sent by the client.
                 while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
                 {
+                    
                     // Translate data bytes to a ASCII string.
                     data = System.Text.Encoding.ASCII.GetString(bytes, 0, i);
-
-
+                    
                     //3 - Event auslösen
                     OnCommunicationReceived(data);
 

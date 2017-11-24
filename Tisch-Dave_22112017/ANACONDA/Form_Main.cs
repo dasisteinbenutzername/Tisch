@@ -59,7 +59,7 @@ namespace ANACONDA
             ThreadStart del2 = new ThreadStart(tcpclient1.sendCommunication);
             Thread th2 = new Thread(del2);
             thread.Start();
-            analyse.KommunikationInAuftragGeben();
+            //analyse.KommunikationInAuftragGeben();
             //th2.Start();
         }
     }
